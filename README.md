@@ -46,10 +46,10 @@ docker start ${DOCKER_CONTAINER_NAME}
 ```bash
 bin/magento setup:store-config:set --base-url='http://127.0.0.5/'
 bin/magento cache:flush
-docker cp magento2-hackathon:/var/www/dist ./
+docker cp ${DOCKER_CONTAINER_NAME}:/var/www/dist ./
 gulp deploy:docker
 bin/magento module:status
-bin/magento module:enable TechDivision_PageDesigner
+bin/magento module:enable TechDivision_Hello
 bin/magento setup:upgrade
 bin/magento setup:static-content:deploy
 bin/magento deploy:mode:set developer
