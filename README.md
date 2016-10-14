@@ -48,6 +48,7 @@ bin/magento setup:store-config:set --base-url='http://127.0.0.5/'
 bin/magento cache:flush
 docker cp ${DOCKER_CONTAINER_NAME}:/var/www/dist ./
 gulp deploy:docker
+docker exec ${DOCKER_CONTAINER_NAME} chmod +x /var/www/dist/bin/magento
 bin/magento module:status
 bin/magento module:enable TechDivision_Hello
 bin/magento setup:upgrade
