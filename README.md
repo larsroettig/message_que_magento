@@ -4,6 +4,12 @@
 
 You need to have current versions of docker, node, npm, gulp-cli and php composer installed
 
+## Clone repository
+```bash
+git clone git://10.0.106.114/magento2-hackathon
+cd magento2-hackathon
+```
+
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
@@ -17,14 +23,14 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 
 ## Pull magento2-ee repository
 ```bash
-docker pull 10.0.106.144/magento2-hackaton:latest
+docker pull 10.0.106.114/magento2-hackaton:latest
 ```
 
 ## Prepare docker container
 ```bash
 sudo ifconfig lo0 alias 127.0.0.5
 DOCKER_CONTAINER_NAME='magento2-hackathon'
-docker create --name ${DOCKER_CONTAINER_NAME} -p 127.0.0.5:80:80 registry.ci.magento2.tdintern.de/magento2-ee:latest
+docker create --name ${DOCKER_CONTAINER_NAME} -p 127.0.0.5:80:80 10.0.106.114/magento2-hackaton:latest
 docker start ${DOCKER_CONTAINER_NAME}
 ```
 
