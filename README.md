@@ -21,6 +21,11 @@ git clone git://10.0.106.114/magento2-hackathon
 cd magento2-hackathon
 ```
 
+## Install dependencies
+```bash
+npm install
+```
+
 ## Pull magento2 docker image
 
 Add ```10.0.106.114:5000``` to insecure registries in advanced settings.
