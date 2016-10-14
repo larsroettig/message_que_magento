@@ -1,10 +1,10 @@
 <?php
 
-namespace Hackathon\MQMonitor\Controller\Adminhtml;
+namespace Hackathon\MQMonitor\Controller\Adminhtml\Monitor;
 
 use Magento\Backend\App\Action;
 
-class Monitor extends Action
+class Index extends Action
 {
 
     /**
