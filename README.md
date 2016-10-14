@@ -21,7 +21,10 @@ git clone git://10.0.106.114/magento2-hackathon
 cd magento2-hackathon
 ```
 
-## Pull magento2-ee repository
+## Pull magento2 docker image
+
+Add ```10.0.106.114:5000``` to insecure registries in advanced settings.
+
 ```bash
 docker pull 10.0.106.114:5000/magento2-hackaton:latest
 ```
