@@ -35,7 +35,8 @@ var options = {
             '!vendor{,/**}',
             '!dist{,/**}',
             '!doc{,/**}',
-            '!**/.DS_Store'
+            '!**/.DS_Store',
+            '!bin{,/**}'
         ],
         src_env: [],
         dir: 'dist/'
