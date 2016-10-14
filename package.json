@@ -1,0 +1,32 @@
+{
+  "author": "Johann Zelger <j.zelger@techdivision.com>",
+  "maintainers": [
+    {
+      "name": "Johann Zelger",
+      "email": "j.zelger@techdivision.com"
+    },
+    {
+      "name": "Simon Sippert",
+      "email": "s.sippert@techdivision.com"
+    },
+    {
+      "name": "Julian Schlarb",
+      "email": "j.schlarb@techdivision.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.ci.magento2.tdintern.de/techdivision/pagedesigner"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-git": "^1.7.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5"
+  },
+  "license": "OSL-3.0"
+}
+
