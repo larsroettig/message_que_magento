@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Hackathon_MQMonitor::system_message_queue" title="Message Queue" module="Hackathon_MQMonitor" sortOrder="50" parent="Magento_Backend::system" resource="Hackathon_MQMonitor::system_message_queue" />
+        <add id="Hackathon_MQMonitor::monitor" title="Monitor" module="Hackathon_MQMonitor" sortOrder="0" parent="Hackathon_MQMonitor::system_message_queue" action="mqmonitor/monitor" resource="Hackathon_MQMonitor::monitor"/>
+    </menu>
+</config>
