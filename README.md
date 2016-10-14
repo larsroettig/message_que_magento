@@ -64,5 +64,7 @@ gulp dev:docker
 
 ## Magento Backend
 http://127.0.0.5/admin
+
 Username: admin
+
 Password: password1
