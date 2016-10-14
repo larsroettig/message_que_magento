@@ -37,7 +37,7 @@ docker pull 10.0.106.114:5000/magento2-hackathon:latest
 ## Prepare docker container
 ```bash
 sudo ifconfig lo0 alias 127.0.0.5
-DOCKER_CONTAINER_NAME='magento2-hackathon'
+export DOCKER_CONTAINER_NAME='magento2-hackathon'
 docker create --name ${DOCKER_CONTAINER_NAME} -p 127.0.0.5:80:80 10.0.106.114:5000/magento2-hackathon:latest
 docker start ${DOCKER_CONTAINER_NAME}
 ```
