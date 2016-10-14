@@ -1,3 +1,3 @@
 #!/bin/bash
 CMD="cd /var/www/dist && chmod +x n98-magerun2.phar && ./n98-magerun2.phar $@"
-docker exec magento2-hackathon sh -c "$CMD"
+docker exec -it magento2-hackathon bash -c "$CMD"
