@@ -2,7 +2,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Hackathon\MQMonitor\Api\MessageInterface" type="Hackathon\MQMonitor\Model\Message" />
-
     <type name="Magento\Framework\MessageQueue\MergerFactory">
         <arguments>
             <argument name="mergers" xsi:type="array">
@@ -10,5 +9,4 @@
             </argument>
         </arguments>
     </type>
-
 </config>
