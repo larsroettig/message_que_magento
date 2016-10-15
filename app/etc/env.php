@@ -7,7 +7,7 @@ return array (
   ),
     'queue' => [
         'amqp' => [
-            'host' => '172.17.0.4',
+            'host' => '172.17.0.2',
             'port' => '5672',
             'user' => 'guest',
             'password' => 'guest',
